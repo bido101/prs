@@ -113,7 +113,6 @@ $(document).ready(function(){
                 type: "GET",
                 data: { query: query },
                 success: function(data) {
-                    console.log(data)
                     let output = '';
                     let num = 1;
                     if (data.length > 0) {
