@@ -137,14 +137,14 @@ $(document).ready(function(){
                         output = `
                             <tr>
                                 <td colspan="12" style="text-align: center;">No Record Found</td>
-                            <tr>
+                            </tr>
                         `;
                     }
                     $('#patientsTable').html(output);
                 }
             });
         } else {
-            $('#patientsTable').html('');
+            fetchPatients();
         }
     });
 

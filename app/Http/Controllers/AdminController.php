@@ -83,7 +83,7 @@ class AdminController extends Controller
         return view('pages/patientInfo', compact('patient'));
     }
     public function __search(Request $request){
-        $query = $request->search;
+        $query = $request->input('query');
         $keywords = explode(' ', $query);
 
         $results = Patient::where(function ($q) use ($keywords) {
